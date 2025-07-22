@@ -1,0 +1,10 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" placeholder="Insira o nome da cidade" name="city" [(ngModel)]="initialCityName">
+    <span (click)="onSubmit()">
+      <fa-icon animation="shake" style="--fa-animation-duration: 3s; cursor: pointer" size="lg" class="search-icon" [icon]="searchIcon" />
+    </span>
+  </form>
+</div>
+
+<p>{{weatherData.main | json}}</p>
