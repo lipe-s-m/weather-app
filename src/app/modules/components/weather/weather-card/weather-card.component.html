@@ -1,14 +1,38 @@
-<div class="container" [ngClass]="isNight ? 'night-mode' : 'day-mode'">
-  <div class="upper-data box-data">
-    <!-- <img *ngIf="weatherDataInput.main.temp > 19" src="/assets/images/sun.jpg" alt="Imagem de calor">
-    <img *ngIf="weatherDataInput.main.temp <= 19" src="../../../../../assets/images/cold1.jpg" alt="Imagem de frio"> -->
+<!-- <img *ngIf="weatherDataInput.main.temp <= 19" src="../../../../../assets/images/cold1.jpg" alt="Imagem de frio"> -->
+<img *ngIf="!isNight" src="./../../../../../assets/icons/sol.png" alt="Sol" class="sunIcon">
 
+<div class="container" [ngClass]="isNight ? 'night-mode' : 'day-mode'">
+  <div class="icons">
+    <div class="clouds">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+    </div>
+  </div>
+
+  <div class="upper-data">
     <div class="weather-data" [ngClass]="isNight ? 'night-mode' : 'day-mode'">
       <p class="location">{{weatherDataInput.name}}</p>
       <p class="temperature">{{weatherDataInput.main.temp | number : "1.0-0"}}ºC</p>
-      <p class="time">{{cityTime}}</p>
-      <p class="data">{{cityDate}}</p>
+      <div class="date-time">
+        <div class="time">
+          <span> <img src="./../../../../../assets/icons/clock.png" alt=""></span>
+          <p>{{cityTime}}</p>
+        </div>
+        <div class="date">
+          <span> <img src="./../../../../../assets/icons/calendar-icon.png" alt=""></span>
+          <p>{{cityDate}}</p>
+        </div>
+      </div>
     </div>
+
   </div>
   <div class="lower-data box-data">
     <div class="more-info-container" [ngClass]="isNight ? 'night-mode' : 'day-mode'">

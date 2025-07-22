@@ -1,33 +1,27 @@
 .container {
-  background-color: rgba(255, 255, 255, 0.918);
   border-radius: 2rem;
-  box-shadow: 10rem 10rem 10rem var(--shadow-dark);
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  width: 100rem;
-  min-height: 50rem;
+  padding: 2rem;
+  width: 66rem;
+  min-height: 65rem;
 }
 
 .container.day-mode {
-  /* background-color: #F5F5F5; */
-  /* background-color: var(--light-blue);/ */
-
+  background-color: var(--light-blue);
   box-shadow: 10rem 10rem 10rem var(--shadow-light);
 }
 
 .container.night-mode {
-  background-color: rgba(53, 53, 53, 0.918);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 10rem 10rem 10rem var(--shadow-dark);
 }
 
 .upper-data {
-  border-radius: 2rem;
-  overflow: hidden;
-  width: 70%;
+  width: 100%;
 }
 
 .upper-data::after {
@@ -36,8 +30,8 @@
   background-color: #F5F5F5;
   color: #F5F5F5;
   height: 0.4rem;
-  width: 100%;
-  margin: 4rem 0;
+  width: 80%;
+  margin: 4rem auto;
 }
 
 .weather-data {
@@ -45,11 +39,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3.2rem;
-  z-index: 1;
-  width: 100%;
+  width: 90%;
   height: 100%;
-
+  padding: 2rem;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .weather-data.day-mode {
@@ -57,18 +51,25 @@
 }
 
 .weather-data.night-mode {
-  background-color: var(--dark-purple);
+  /* background-color: var(--dark-purple); */
 }
+
+
 
 p {
   color: var(--white);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  justify-content: center;
+}
+
+span img {
+  height: 4rem;
 }
 
 .location {
   color: var(--white);
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.8rem;
 }
 
 .temperature {
@@ -78,14 +79,20 @@ p {
   font-weight: 900;
 }
 
-.more-info-label {
-  color: var(--white);
-  font-size: 1.9rem;
+.date-time {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.time,
+.date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.95;
 }
 
 .more-info-container {
@@ -94,7 +101,7 @@ p {
   flex-wrap: wrap;
   flex: 1;
   border-radius: 2rem;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .more-info-container.day-mode {
@@ -102,7 +109,7 @@ p {
 }
 
 .more-info-container.night-mode {
-  background-color: var(--dark-purple);
+  /* background-color: var(--dark-purple); */
 }
 
 .info-block {
@@ -123,7 +130,7 @@ p {
 
 .info-block-label span {
   color: var(--white);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   margin-top: 0.4rem;
 }
 
@@ -133,6 +140,129 @@ p {
   justify-content: flex-start;
   align-items: center;
   color: var(--white);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+}
 
+.cloudIcon {
+  height: 12rem;
+  position: absolute;
+  right: -12rem;
+  animation: walkCloud 12s linear infinite;
+  z-index: -1;
+}
+
+
+
+.cloudIcon:nth-child(1) {
+  top: 10rem;
+  animation: walkCloud 11s linear infinite;
+
+}
+
+.cloudIcon:nth-child(2) {
+  right: -14.8rem;
+  height: 15rem;
+  top: 24rem;
+  animation-delay: 3s;
+}
+
+.cloudIcon:nth-child(3) {
+  animation: walkCloud 10s linear infinite;
+
+  top: 18rem;
+  animation-delay: 6s;
+}
+
+.cloudIcon:nth-child(4) {
+  right: -17rem;
+  height: 17rem;
+  top: 12rem;
+  animation-delay: 9s;
+}
+
+
+.cloudIcon:nth-child(5) {
+  animation: walkCloud 11s linear infinite;
+
+  height: 13rem;
+  right: -13rem;
+  bottom: 24rem;
+  animation-delay: 7.5s;
+}
+
+.cloudIcon:nth-child(6) {
+  animation: walkCloud 13s linear infinite;
+
+  height: 18rem;
+  right: -18rem;
+  bottom: 17rem;
+  animation-delay: 2s;
+}
+
+.cloudIcon:nth-child(7) {
+  animation: walkCloud 10s linear infinite;
+
+  bottom: 8rem;
+  animation-delay: 4s;
+}
+
+.cloudIcon:nth-child(8) {
+  animation: walkCloud 12s linear infinite;
+
+  right: -14rem;
+  height: 14rem;
+  bottom: 2rem;
+  animation-delay: 1s;
+}
+
+.cloudIcon:nth-child(9) {
+  animation: walkCloud 15s linear infinite;
+
+  right: -15rem;
+  height: 15rem;
+  bottom: 25rem;
+  animation-delay: 10s;
+}
+
+.cloudIcon:nth-child(10) {
+  animation: walkCloud 16s linear infinite;
+
+  right: -20rem;
+  height: 20rem;
+  bottom: 28rem;
+  animation-delay: 13s;
+}
+
+.sunIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24rem;
+  margin: 6rem;
+  display: flex;
+  animation: spinAndFloat 12s linear infinite;
+}
+
+@keyframes spinAndFloat {
+
+  0% {
+    transform: rotate(0deg) translateX(4rem);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(4rem);
+  }
+
+
+}
+
+
+@keyframes walkCloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-108vw);
+  }
 }

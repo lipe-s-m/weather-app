@@ -8,7 +8,7 @@
   --shadow-dark: rgba(0, 0, 0, 0.3);
   --dark-purple: rgba(10, 1, 43, 0.801);
   --light-blue: #749BC2;
-  --light-blue: #5EABD6;
+  --light-blue: #3D90D7;
   --shadow-light: rgba(255, 255, 255, 0.277);
 }
 
@@ -31,14 +31,20 @@ body {
   background-repeat: repeat-x;
   background-size: cover;
   transition: all ease 0.5s;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 body.day-mode {
-  background-color: var(--light-blue);
+  background-image: radial-gradient(circle at 14.7% 7.93%, #c1faff 0, #9be9ff 16.67%, #6fd6fb 33.33%, #29c1f4 50%, #00acee 66.67%, #0098e9 83.33%, #0086e4 100%);
+  transition: all ease 0.5s;
+
 }
 
 body.night-mode {
   background-image: url('./assets/images/night.jpg');
+  transition: all ease 0.5s;
+
 }
 
 
