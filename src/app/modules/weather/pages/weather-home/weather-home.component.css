@@ -1,0 +1,20 @@
+.search {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.search input {
+  background-color: var(--shadow-dark);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+  width: 70%;
+}
+
+.search-icon {
+  margin-left: 1em;
+}

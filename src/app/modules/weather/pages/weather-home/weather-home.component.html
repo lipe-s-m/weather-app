@@ -7,4 +7,4 @@
   </form>
 </div>
 
-<p>{{weatherData.main | json}}</p>
+<app-weather-card *ngIf="weatherData" [weatherDataInput]="weatherData" />

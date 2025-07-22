@@ -7,10 +7,10 @@ import { WeatherHomeComponent } from './modules/weather/pages/weather-home/weath
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
-import { CardComponent } from './src/app/modules/components/weather/weather/card/card.component';
+import { WeatherCardComponent } from './modules/components/weather/weather-card/weather-card.component';
 
 @NgModule({
-  declarations: [AppComponent, WeatherHomeComponent, CardComponent],
+  declarations: [AppComponent, WeatherHomeComponent, WeatherCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
