@@ -16,7 +16,16 @@
 }
 
 .container.night-mode {
-  background-color: rgba(0, 0, 0, 0.9);
+  background: hsla(233, 28%, 59%, 1);
+
+  background: linear-gradient(135deg, hsla(233, 28%, 59%, 1) 14%, hsla(247, 60%, 76%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(233, 28%, 59%, 1) 14%, hsla(247, 60%, 76%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(233, 28%, 59%, 1) 14%, hsla(247, 60%, 76%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7980B3", endColorstr="#A79FE7", GradientType=1);
+
   box-shadow: 10rem 10rem 10rem var(--shadow-dark);
 }
 
@@ -233,14 +242,18 @@ span img {
   animation-delay: 13s;
 }
 
+.stars>.cloudIcon.star {
+  height: 8rem;
+}
+
 .sunIcon {
   position: absolute;
   top: 0;
   left: 0;
-  height: 24rem;
+  height: 26rem;
   margin: 6rem;
   display: flex;
-  animation: spinAndFloat 12s linear infinite;
+  /* animation: spinAndFloat 12s linear infinite; */
 }
 
 @keyframes spinAndFloat {

@@ -1,5 +1,6 @@
 <!-- <img *ngIf="weatherDataInput.main.temp <= 19" src="../../../../../assets/images/cold1.jpg" alt="Imagem de frio"> -->
 <img *ngIf="!isNight" src="./../../../../../assets/icons/sol.png" alt="Sol" class="sunIcon">
+<img *ngIf="isNight" src="./../../../../../assets/icons/lua1.png" alt="Sol" class="sunIcon">
 
 <div class="container" [ngClass]="isNight ? 'night-mode' : 'day-mode'">
   <div class="icons">
@@ -12,8 +13,18 @@
       <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
       <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
       <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
-      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
-      <img *ngIf="!isNight" src="./../../../../../assets/icons/nuvem.png" alt="Nuvem" class="cloudIcon">
+    </div>
+    <div class="clouds stars">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
+      <img *ngIf="isNight" src="./../../../../../assets/icons/star2.png" alt="star2" class="cloudIcon star">
     </div>
   </div>
 
