@@ -1,13 +1,13 @@
 .container {
   border-radius: 2rem;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  width: 66rem;
-  min-height: 65rem;
+  width: 60rem;
+  height: 55rem;
 }
 
 .container.day-mode {
@@ -40,7 +40,8 @@
   color: #F5F5F5;
   height: 0.4rem;
   width: 80%;
-  margin: 4rem auto;
+  margin: 0rem auto 2rem;
+
 }
 
 .weather-data {
@@ -110,7 +111,7 @@ span img {
   flex-wrap: wrap;
   flex: 1;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .more-info-container.day-mode {
@@ -155,7 +156,7 @@ span img {
 .cloudIcon {
   height: 12rem;
   position: absolute;
-  right: -12rem;
+  right: -18rem;
   animation: walkCloud 12s linear infinite;
   z-index: -1;
 }
@@ -169,7 +170,6 @@ span img {
 }
 
 .cloudIcon:nth-child(2) {
-  right: -14.8rem;
   height: 15rem;
   top: 24rem;
   animation-delay: 3s;
@@ -183,7 +183,7 @@ span img {
 }
 
 .cloudIcon:nth-child(4) {
-  right: -17rem;
+
   height: 17rem;
   top: 12rem;
   animation-delay: 9s;
@@ -194,7 +194,7 @@ span img {
   animation: walkCloud 11s linear infinite;
 
   height: 13rem;
-  right: -13rem;
+
   bottom: 24rem;
   animation-delay: 7.5s;
 }
@@ -203,7 +203,7 @@ span img {
   animation: walkCloud 13s linear infinite;
 
   height: 18rem;
-  right: -18rem;
+
   bottom: 17rem;
   animation-delay: 2s;
 }
@@ -218,7 +218,7 @@ span img {
 .cloudIcon:nth-child(8) {
   animation: walkCloud 12s linear infinite;
 
-  right: -14rem;
+
   height: 14rem;
   bottom: 2rem;
   animation-delay: 1s;
@@ -227,7 +227,7 @@ span img {
 .cloudIcon:nth-child(9) {
   animation: walkCloud 15s linear infinite;
 
-  right: -15rem;
+
   height: 15rem;
   bottom: 25rem;
   animation-delay: 10s;
@@ -236,14 +236,15 @@ span img {
 .cloudIcon:nth-child(10) {
   animation: walkCloud 16s linear infinite;
 
-  right: -20rem;
+
   height: 20rem;
   bottom: 28rem;
   animation-delay: 13s;
 }
 
 .stars>.cloudIcon.star {
-  height: 8rem;
+  height: 6rem;
+  right: -6rem;
 }
 
 .sunIcon {

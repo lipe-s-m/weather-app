@@ -1,10 +1,13 @@
-<div class="search">
-  <form #form="ngForm" (submit)="onSubmit()">
-    <input type="text" placeholder="Insira o nome da cidade" name="city" [(ngModel)]="initialCityName">
-    <span (click)="onSubmit()">
-      <fa-icon animation="shake" style="--fa-animation-duration: 3s; cursor: pointer" size="lg" class="search-icon" [icon]="searchIcon" />
-    </span>
-  </form>
-</div>
+<div class="container">
 
-<app-weather-card *ngIf="weatherData" [weatherDataInput]="weatherData" />
+  <div class="search">
+    <form #form="ngForm" (submit)="onSubmit()">
+      <input type="text" placeholder="Insira o nome da cidade" name="city" [(ngModel)]="initialCityName">
+      <span (click)="onSubmit()">
+        <fa-icon animation="shake" style="--fa-animation-duration: 3s; cursor: pointer" size="lg" class="search-icon" [icon]="searchIcon" />
+      </span>
+    </form>
+  </div>
+
+  <app-weather-card [ngStyle]="{ display: 'flex', width: '100%' }" *ngIf="weatherData" [weatherDataInput]="weatherData" />
+</div>

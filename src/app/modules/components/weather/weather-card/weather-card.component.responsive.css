@@ -1,0 +1,261 @@
+@media(max-width: 1350px) {
+  .sunIcon {
+    height: 23rem;
+    margin: 5rem;
+  }
+
+}
+
+@media(max-width: 1250px) {
+  .sunIcon {
+    height: 21rem;
+    margin: 4rem;
+  }
+
+}
+
+
+@media(max-width: 1150px) {
+  .sunIcon {
+    height: 21rem;
+    margin: 3.5rem;
+  }
+
+  .container {
+    width: 58rem;
+    padding: 1rem;
+  }
+
+  .temperature {
+    font-size: 7.5rem;
+  }
+}
+
+@media(max-width: 1070px) {
+  .sunIcon {
+    height: 18rem;
+    margin: 2rem 3.5rem 3.5rem 3.5rem;
+  }
+
+  .container {
+    width: 55%;
+    min-width: 53rem;
+    padding: 0.8rem;
+  }
+
+  .temperature {
+    font-size: 7rem;
+  }
+}
+
+@media(max-width: 920px) {
+  .sunIcon {
+    height: 15rem;
+    margin: 1.5rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .container {
+    width: 55%;
+    min-height: 54rem;
+    max-height: 60rem;
+    height: 65vw;
+    padding: 0.8rem;
+  }
+
+  .location {
+    font-size: 3.2rem;
+  }
+
+  .temperature {
+    font-size: 6.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .time p,
+  .date p {
+    font-size: 2.4rem;
+  }
+
+  .upper-data span img {
+    height: 3.2rem;
+  }
+
+
+  /* lower data */
+  .lower-data fa-icon {
+    font-size: 2.4rem;
+  }
+
+  .info-block-value,
+  .info-block-label span {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .sunIcon {
+    height: 13rem;
+    margin: 1.5rem 2rem 2rem 1rem;
+  }
+
+  .stars>.cloudIcon.star {
+    height: 5rem;
+  }
+}
+
+
+@media(max-width: 620px) {
+  .sunIcon {
+    height: 10rem;
+    margin: 1rem 2rem 2rem 0.5rem;
+  }
+
+  .stars>.cloudIcon.star {
+    height: 5rem;
+  }
+
+  .container {
+    min-height: 50rem;
+    max-height: 54rem;
+    height: 92vw;
+    width: 55%;
+    min-width: 45rem;
+    padding: 0.8rem;
+  }
+
+  .location {
+    font-size: 3.2rem;
+  }
+
+  .temperature {
+    font-size: 6.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .time p,
+  .date p {
+    font-size: 2.4rem;
+  }
+
+  .upper-data span img {
+    height: 3.2rem;
+  }
+
+
+  /* lower data */
+  .lower-data fa-icon {
+    font-size: 2.4rem;
+  }
+
+  .info-block-value,
+  .info-block-label span {
+    font-size: 2rem;
+  }
+}
+
+
+@media(max-width: 490px) {
+  .sunIcon {
+    height: 7rem;
+    margin: 1rem 2rem 2rem 0.5rem;
+  }
+
+  .stars>.cloudIcon.star {
+    height: 3.2rem;
+  }
+
+  .container {
+    min-height: 46rem;
+    max-height: 50rem;
+    height: 40vh;
+    width: 87%;
+    max-width: 42rem;
+    min-width: 38rem;
+    padding: 0.8rem;
+  }
+
+  .location {
+    font-size: 2.6rem;
+  }
+
+  .temperature {
+    font-size: 5.6rem;
+    margin-bottom: -1rem;
+  }
+
+  .time p,
+  .date p {
+    font-size: 2rem;
+  }
+
+  .upper-data span img {
+    height: 3rem;
+  }
+
+
+  /* lower data */
+  .lower-data fa-icon {
+    font-size: 2rem;
+  }
+
+  .info-block-value,
+  .info-block-label span {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .sunIcon {
+    height: 5rem;
+    margin: 1rem 2rem 2rem 0.2rem;
+  }
+
+  .stars>.cloudIcon.star {
+    height: 3.2rem;
+  }
+
+  .container {
+    min-height: 36rem;
+    max-height: 46rem;
+    height: 40vh;
+    width: 87%;
+    max-width: 38rem;
+    min-width: 29rem;
+    padding: 0.8rem;
+  }
+
+  .location {
+    font-size: 2.2rem;
+  }
+
+  .temperature {
+    font-size: 4.2rem;
+    margin-bottom: -1rem;
+  }
+
+  .time,
+  .date {
+    gap: 0.4rem;
+  }
+
+  .time p,
+  .date p {
+    font-size: 1.5rem;
+  }
+
+  .upper-data span img {
+    height: 2rem;
+  }
+
+
+  /* lower data */
+  .lower-data fa-icon {
+    font-size: 1.6rem;
+  }
+
+  .info-block-value,
+  .info-block-label span {
+    font-size: 1.2rem;
+  }
+}

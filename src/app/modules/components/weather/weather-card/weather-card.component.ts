@@ -19,7 +19,10 @@ import { Subject, takeUntil } from 'rxjs';
   selector: 'app-weather-card',
   standalone: false,
   templateUrl: './weather-card.component.html',
-  styleUrls: ['./weather-card.component.css'],
+  styleUrls: [
+    './weather-card.component.css',
+    './weather-card.component.responsive.css',
+  ],
 })
 export class WeatherCardComponent implements OnChanges, OnDestroy {
   constructor(private timeService: TimeService) {}
