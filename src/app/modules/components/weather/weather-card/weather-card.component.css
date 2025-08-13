@@ -60,12 +60,6 @@
   background-color: var(--light-blue);
 }
 
-.weather-data.night-mode {
-  /* background-color: var(--dark-purple); */
-}
-
-
-
 p {
   color: var(--white);
   font-size: 2.8rem;
@@ -118,10 +112,6 @@ span img {
   background-color: var(--light-blue);
 }
 
-.more-info-container.night-mode {
-  /* background-color: var(--dark-purple); */
-}
-
 .info-block {
   width: 50%;
   display: flex;
@@ -155,88 +145,78 @@ span img {
 
 .cloudIcon {
   height: 12rem;
-  position: absolute;
-  right: -18rem;
-  animation: walkCloud 12s linear infinite;
+  position: fixed;
+  right: 0;
   z-index: -1;
+  opacity: 0;
 }
-
-
 
 .cloudIcon:nth-child(1) {
   top: 10rem;
-  animation: walkCloud 11s linear infinite;
-
+  animation: fadeInOut 12s linear infinite, walkCloud 12s linear infinite;
+  animation-delay: 0s;
 }
 
 .cloudIcon:nth-child(2) {
+  animation: fadeInOut 12s linear infinite, walkCloud 12s linear infinite;
+
   height: 15rem;
   top: 24rem;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 .cloudIcon:nth-child(3) {
-  animation: walkCloud 10s linear infinite;
+  animation: fadeInOut 12s linear infinite, walkCloud 10s linear infinite;
 
   top: 18rem;
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 .cloudIcon:nth-child(4) {
 
   height: 17rem;
   top: 12rem;
-  animation-delay: 9s;
+  animation-delay: 3s;
+
 }
 
-
 .cloudIcon:nth-child(5) {
-  animation: walkCloud 11s linear infinite;
+  animation: fadeInOut 12s linear infinite, walkCloud 11s linear infinite;
 
   height: 13rem;
-
   bottom: 24rem;
-  animation-delay: 7.5s;
+  animation-delay: 6s;
 }
 
 .cloudIcon:nth-child(6) {
-  animation: walkCloud 13s linear infinite;
-
+  animation: fadeInOut 12s linear infinite, walkCloud 13s linear infinite;
   height: 18rem;
-
   bottom: 17rem;
-  animation-delay: 2s;
+  animation-delay: 1.7s;
 }
 
 .cloudIcon:nth-child(7) {
-  animation: walkCloud 10s linear infinite;
-
+  animation: fadeInOut 12s linear infinite, walkCloud 10s linear infinite;
   bottom: 8rem;
-  animation-delay: 4s;
+  animation-delay: 7.5s;
 }
 
 .cloudIcon:nth-child(8) {
-  animation: walkCloud 12s linear infinite;
-
-
+  animation: fadeInOut 12s linear infinite, walkCloud 12s linear infinite;
   height: 14rem;
   bottom: 2rem;
-  animation-delay: 1s;
+  animation-delay: 8s;
 }
 
 .cloudIcon:nth-child(9) {
-  animation: walkCloud 15s linear infinite;
-
-
+  animation: fadeInOut 12s linear infinite, walkCloud 15s linear infinite;
   height: 15rem;
   bottom: 25rem;
   animation-delay: 10s;
 }
 
 .cloudIcon:nth-child(10) {
-  animation: walkCloud 16s linear infinite;
-
-
+  animation: fadeInOut 12s linear infinite, walkCloud 16s linear infinite;
   height: 20rem;
   bottom: 28rem;
   animation-delay: 13s;
@@ -244,7 +224,68 @@ span img {
 
 .stars>.cloudIcon.star {
   height: 6rem;
-  right: -6rem;
+  position: fixed;
+  right: 0;
+}
+
+.stars>.cloudIcon.star:nth-child(1) {
+  animation: fadeInOut 14s linear infinite, walkCloud 12s linear infinite;
+  animation-delay: 0s;
+  top: 15%;
+}
+
+.stars>.cloudIcon.star:nth-child(2) {
+  animation: fadeInOut 16s linear infinite, walkCloud 16s linear infinite;
+  animation-delay: 2s;
+  top: 25%;
+}
+
+.stars>.cloudIcon.star:nth-child(3) {
+  animation: fadeInOut 13s linear infinite, walkCloud 10s linear infinite;
+  animation-delay: 4s;
+  top: 35%;
+}
+
+.stars>.cloudIcon.star:nth-child(4) {
+  animation: fadeInOut 17s linear infinite, walkCloud 17s linear infinite;
+  animation-delay: 1s;
+  top: 45%;
+}
+
+.stars>.cloudIcon.star:nth-child(5) {
+  animation: fadeInOut 15s linear infinite, walkCloud 15s linear infinite;
+  animation-delay: 9s;
+  top: 55%;
+}
+
+.stars>.cloudIcon.star:nth-child(6) {
+  animation: fadeInOut 18s linear infinite, walkCloud 18s linear infinite;
+  animation-delay: 3s;
+  top: 65%;
+}
+
+.stars>.cloudIcon.star:nth-child(7) {
+  animation: fadeInOut 12s linear infinite, walkCloud 12s linear infinite;
+  animation-delay: 5s;
+  top: 75%;
+}
+
+.stars>.cloudIcon.star:nth-child(8) {
+  animation: fadeInOut 16s linear infinite, walkCloud 16s linear infinite;
+  animation-delay: 7s;
+  top: 85%;
+}
+
+.stars>.cloudIcon.star:nth-child(9) {
+  animation: fadeInOut 14s linear infinite, walkCloud 14s linear infinite;
+  animation-delay: 6s;
+  top: 10%;
+}
+
+.stars>.cloudIcon.star:nth-child(10) {
+  animation: fadeInOut 15s linear infinite, walkCloud 15s linear infinite;
+  animation-delay: 7s;
+  top: 20%;
 }
 
 .sunIcon {
@@ -273,10 +314,23 @@ span img {
 
 @keyframes walkCloud {
   0% {
-    transform: translateX(0);
+    transform: translateX(33vw);
   }
 
   100% {
-    transform: translateX(-108vw);
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  3%,
+  97% {
+    opacity: 1;
   }
 }
