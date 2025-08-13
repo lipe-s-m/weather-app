@@ -265,11 +265,11 @@
   }
 
   .container {
-    min-height: 38rem;
+    min-height: 40rem;
     max-height: 46rem;
     height: 40vh;
-    width: 87%;
-    max-width: 38rem;
+    width: 93%;
+    max-width: 35rem;
     min-width: 29rem;
     padding: 0.8rem;
   }
@@ -290,11 +290,11 @@
 
   .time p,
   .date p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .upper-data span img {
-    height: 2rem;
+    height: 2.1rem;
   }
 
 
@@ -303,8 +303,11 @@
     font-size: 1.6rem;
   }
 
-  .info-block-value,
+  .info-block-value {
+    font-size: 1.4rem;
+  }
+
   .info-block-label span {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
